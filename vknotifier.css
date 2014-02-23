@@ -1,0 +1,16 @@
+/* CSS declarations go here */
+.pd-sm {
+  padding: 10px 0;
+}
+
+.v-align-mid {
+  vertical-align: middle
+}
+
+.in-bl {
+  display: inline-block;
+}
+
+.pd-tp {
+  padding-top: 10px;
+}

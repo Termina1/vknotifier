@@ -1,0 +1,36 @@
+<head>
+  <title>vknotifier</title>
+</head>
+
+<body>
+  <div class="container">
+    {{> hello}}
+  </div>
+</body>
+
+<template name="hello">
+  <h3>Авторизуйтесь!</h3>
+  <div class="well">
+    {{loginButtons}}
+  </div>
+  <div class="panel panel-default">
+      <div class="panel-heading">Groups</div>
+      <div class="panel-body">
+        <div>
+          {{#each groups}}
+            <div class="row pd-sm">
+              <div class="col-md-1 pd-tp">
+                {{#if watched this}}
+                  <button type="button" class="js-unwatch btn btn-danger">Unwatch</button>
+                {{else}}
+                  <button type="button" class="js-watch btn btn-success">Watch</button>
+                {{/if}}
+              </div>
+              <div class="col-md-1"><img src="{{photo}}"></div>
+              <div class="col-md-3 pd-tp"><span>{{name}}</span></div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+</template>

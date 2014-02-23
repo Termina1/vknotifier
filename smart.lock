@@ -1,0 +1,45 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "accounts-vkontakte": {
+        "git": "git@github.com:wsoul/meteor-accounts-vkontakte.git",
+        "branch": "master"
+      },
+      "meteor-vkontakte": {
+        "git": "git@github.com:Termina1/meteor-vkontakte.git",
+        "branch": "master"
+      },
+      "cron-tick": {},
+      "accounts-ui-bootstrap-3": {},
+      "bootstrap-3": {}
+    },
+    "packages": {
+      "accounts-vkontakte": {
+        "git": "git@github.com:wsoul/meteor-accounts-vkontakte.git",
+        "branch": "master",
+        "commit": "cf872f78a08c37959af8e7e76594e114ed500a78"
+      },
+      "meteor-vkontakte": {
+        "git": "git@github.com:Termina1/meteor-vkontakte.git",
+        "branch": "master",
+        "commit": "fcde3f81904ae771f852ee35302ceb9e4acb8946"
+      },
+      "cron-tick": {
+        "git": "https://github.com/tmeasday/meteor-cron.git",
+        "tag": "v0.0.4",
+        "commit": "44cff9116af510fe53704fdeeff57c444ceb75ba"
+      },
+      "accounts-ui-bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
+        "tag": "v0.2.5",
+        "commit": "91cd37a1320213dd209c3a668bf542eeb9c39a00"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.1.0-1",
+        "commit": "329dccb08bfc18c635676dea600ac9953162cda9"
+      }
+    }
+  }
+}

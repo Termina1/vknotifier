@@ -1,0 +1,13 @@
+{
+  "packages": {
+    "accounts-vkontakte": {
+      "git": "git@github.com:wsoul/meteor-accounts-vkontakte.git"
+    },
+    "meteor-vkontakte": {
+      "git": "git@github.com:Termina1/meteor-vkontakte.git"
+    },
+    "cron-tick": {},
+    "accounts-ui-bootstrap-3": {},
+    "bootstrap-3": {}
+  }
+}
