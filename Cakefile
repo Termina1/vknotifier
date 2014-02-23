@@ -16,11 +16,11 @@ deploy = (host, name, pass, path, start = true, port=3001) ->
           client.write 'tar -xzf myapp.tgz\r\n'
           console.log 'unpacking files'
           client.write 'rm myapp.tgz\r\n'
-          client.write 'cd bundle/server\r\n'
+          client.write 'cd bundle/programs/server\r\n'
           client.write 'rm -rf node_modules/fibers\r\n'
           client.write 'npm install fibers\r\n'
           client.write "cd #{path}\r\n"
           client.write 'exit\r\n'
 
 task 'deploy', ->
-  deploy '192.81.223.179', 'terminal', 'technomage1', './vknotifier', true, 3005
+  deploy '192.81.223.179', 'terminal', false, './vknotifier', true, 3005

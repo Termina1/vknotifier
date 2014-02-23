@@ -28,8 +28,14 @@ if Meteor.isClient
     'click .js-unwatch': ->
       WatchRepository.stopWatching @
 
+    'click .js-email-save': ->
+      Meteor.users.update Meteor.userId(), $set: 'profile.email': $('.js-email').val()
+
   Template.hello.groups = ->
     Groups.find().fetch()?[0]?.groups or []
+
+  Template.hello.email = ->
+    Meteor.user()?.profile.email
 
   Template.hello.watched = (group) ->
     WatchRepository.isWatched group

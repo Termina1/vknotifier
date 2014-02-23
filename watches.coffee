@@ -5,3 +5,7 @@ Watches.allow
 
   remove: (userId, record) ->
     record.userId is userId
+
+Meteor.users.allow
+  update: (userId, record) ->
+    record._id is userId
