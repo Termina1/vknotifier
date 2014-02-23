@@ -6,7 +6,7 @@ checkWatch = (instance, userId, watch) ->
       MailService.notifyWatch watch, newposts
 
 
-scrapper = new Cron(1000)
+scrapper = new Cron()
 scrapper.addJob 10, ->
   for user in Meteor.users.find().fetch()
     token = user.services?.vkontakte?.accessToken
